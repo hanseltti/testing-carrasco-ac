@@ -1,0 +1,61 @@
+@import './header';
+@import './navbar';
+@import './variables';
+@import './cards';
+@import './aside';
+@import './counter';
+@import './columnscontainers';
+@import './img-bg-cta';
+@import './why-choose-us';
+@import './testimonial';
+@import './map';
+@import './footer';
+@import './about-header';
+@import './about-side';
+@import './about-main';
+@import './contact';
+@import './air-conditioner';
+@import './heation';
+@import './contact-us';
+@import './asked';
+@import './ac-repairs';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    // overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    background-color: $lightGray;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+
+footer{
+    width: 100%;
+    height: 35vh;
+    background-color: $darkBlue;
+}
+
+
+
+
+
+
+
+
+
+
+
+

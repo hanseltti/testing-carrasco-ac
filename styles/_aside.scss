@@ -1,0 +1,36 @@
+@import './variables';
+
+
+.rightcolumn{
+  padding: 1rem ;
+  width: 27%;
+}
+
+  
+  .side-solutions{
+    overflow: hidden;
+    width: 100%;
+    margin: 3rem 0;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    h2{
+        color: tomato;
+        margin-bottom: 1rem;
+        
+    }
+    p{
+        margin-bottom: .5rem;
+        cursor: pointer;
+        &:hover{
+            color: tomato;
+        }
+    }
+  }
+
+  @media (width < 789px){
+    .rightcolumn{
+      padding: 1rem ;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,67 @@
+@import './variables';
+
+.testimonial-container{
+  background-color: $darkBlue;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: block;
+    width: 276px;
+    color: white;
+    text-decoration: none;
+    background-color: $warmOrange;
+    padding: .5rem 1rem;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    &:hover{
+      background-color: $deepSaffron;
+    }
+  }
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: $lightGray;
+}
+
+.testimonial {
+  
+  display: none;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 2rem;
+  div{
+    img{
+      width: 64px;
+      border-radius: 50%;
+    }
+  }
+  span{
+    margin-bottom: 2rem;
+  }
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}

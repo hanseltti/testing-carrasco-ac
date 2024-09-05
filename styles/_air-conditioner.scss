@@ -1,0 +1,22 @@
+
+@import './variables';
+
+.img-container-1.air-conditioner{
+    height: 55vh;
+    background-image: url('/imgs/ac-pressure-gauges.jpg');
+
+}
+
+.indicators-container{
+    padding: 3rem 1rem;
+   h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: $darkBlue;
+   }
+   ul{
+    li{
+        margin-left: 2rem;
+    }
+   }
+}

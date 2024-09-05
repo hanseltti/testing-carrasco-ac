@@ -1,0 +1,13 @@
+.columns-container{
+    display: flex;
+    // padding: 1rem;
+}
+
+@media (width < 789px){
+    .columns-container{
+        // position: relative;
+        // top: 180px;
+        flex-direction: column;
+        
+    }
+}

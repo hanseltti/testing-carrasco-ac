@@ -1,0 +1,35 @@
+@import './variables';
+
+.about__header {
+    // height: 55vh;
+    h1{
+        background-color: $darkBlue;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+@media (width < 789px){
+    .about__header {
+        height: 20vh;
+        h1{
+            background-color: $darkBlue;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        a{
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+    
+    }
+}

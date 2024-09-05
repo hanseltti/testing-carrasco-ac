@@ -1,0 +1,181 @@
+
+@import './variables';
+
+
+#contact{
+    padding: 3rem 0;
+    background-color: $darkBlue;
+    color: white;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin: 3rem;
+        border-bottom: 1px solid white;
+        padding-bottom: 1rem;
+    }
+
+}
+
+.contact__container {
+    display: flex;
+    margin: 1rem;
+}
+
+.form__container{
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+.form__container__inputs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name__email__container {
+    width: 48%;
+}
+
+.name__email__container span {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2rem;
+
+}
+
+.name__email__container input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #3E66A3;
+}
+
+.textarea__container {
+    width: 100%;
+}
+
+.textarea__container span {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+.textarea__container textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #3E66A3;
+    border: none;
+}
+/* 
+.contact__btn__container button {
+
+} */
+
+.contact__send__btn {
+    height: 48px;
+    padding: 0 3rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.contact__send__btn:hover {
+    background-color: #0197F6;
+}
+
+.call__now__btn__a{
+    padding: .7rem 3rem ;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border: solid #fff 2px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.call__now__btn__a:hover{
+    background-color: transparent;
+    border: solid #0197F6 2px;
+    color: #0197F6;
+}
+
+.contact__info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact__info__container__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-bottom: solid 1px #3E66A3;
+    height: 100%;
+
+    a{
+        color: $deepSaffron;
+        text-decoration: none;
+    }
+
+    p{
+        color: $deepSaffron;
+    }
+
+
+}
+
+@media screen and (max-width:987px) {
+    .contact__send__btn{
+        margin-bottom: 2rem;
+    }
+    .call__now__btn__a{
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

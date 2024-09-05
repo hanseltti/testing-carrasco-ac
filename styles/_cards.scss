@@ -1,0 +1,41 @@
+@import './variables';
+@import './mixins';
+
+.leftcolumn{
+    width: 75%;
+}
+
+.card{
+
+    background-color: white;
+    padding: 1rem ;
+
+    h1{
+        color: $darkBlue;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    :where(h1, h5, p){
+        margin-bottom: .5rem;
+        padding: .5rem 1rem;
+    }
+    .img-container-1{
+        overflow: hidden;
+        margin: 1rem;
+        width: 100% - 4%;
+        height: 55vh;
+        background-image: url('/imgs/condenser-unit-disambled.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    }
+}
+
+@media (width < 789px){
+    .leftcolumn{
+        width: 100%;
+        position: relative;
+        // top: 100px;
+    }
+}

@@ -1,0 +1,47 @@
+@import './variables';
+
+.why-choose-us{
+    padding: 1rem;
+    margin: 3rem 0;
+    h2{
+        text-align: center;
+        margin-bottom: 1rem;
+        color: $darkBlue;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        p{
+            padding: 1rem;
+            min-width: 300px;
+            flex: 1;
+        }
+    }
+}
+
+.why-choose-us-2{
+    padding: 2rem;
+    h2{
+        margin-bottom: 1rem;
+        color: $darkBlue;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    ul{
+        li{
+            margin: 1rem 1rem 1rem 2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

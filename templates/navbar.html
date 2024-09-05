@@ -1,0 +1,106 @@
+<ul class="navbar-full-screen">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="/about.html">About</a></li>
+  <li>
+    <a href="/air-conditioner.html">Air Conditioner</a>
+    <ul class="dropdown ac">
+      <li class="ac-repairs"><a href="#">AC Repairs</a></li>
+      <li class="ac-maintenance"><a href="#">AC Maintenance</a></li>
+      <li class="ac-installation"><a href="#">AC Installation</a></li>
+      <li class="ac-replacement"><a href="#">AC Replacement</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/heating.html">Heating</a>
+    <ul class="dropdown heat">
+      <li class="h-repairs"><a href="#">Heating Repairs</a></li>
+      <li class="h-maintenance"><a href="#">Heating Maintenance</a></li>
+      <li class="h-installation"><a href="#">Heating Installation</a></li>
+      <li class="h-pumps"><a href="#">Heat Pumps</a></li>
+      <li class="h-furnace"><a href="#">Furnances</a></li>
+    </ul>
+  </li>
+  <li><a href="/contact-us.html">Contact Us</a></li>
+  <span class="nav-cell"><a href="tel:(813) 819-4330" >📞 (813) 819-4330</a></span>
+</ul>
+
+<div class="navbar-menu">
+  <div class="navbar-menu-items">
+    <div class="menu-item"></div>
+    <div class="menu-item"></div>
+    <div class="menu-item"></div>
+  </div>
+</div>
+
+<ul class="navbar-small-screen">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="/about.html">About</a></li>
+  <li><a href="/air-conditioner.html">Air Conditioner</a></li>
+  <li class="ac-repairs"><a href="#">AC Repairs</a></li>
+  <li class="ac-maintenance"><a href="#">AC Maintenance</a></li>
+  <li class="ac-installation"><a href="#">AC Installation</a></li>
+  <li class="ac-replacement"><a href="#">AC Replacement</a></li>
+
+  <li><a href="/heating.html">Heating</a></li>
+  <li class="h-repairs"><a href="#">Heating Repairs</a></li>
+  <li class="h-maintenance"><a href="#">Heating Maintenance</a></li>
+  <li class="h-installation"><a href="#">Heating Installation</a></li>
+  <li class="h-pumps"><a href="#">Heat Pumps</a></li>
+  <li class="h-furnace"><a href="#">Furnances</a></li>
+  <li><a href="/contact-us.html">Contact Us</a></li>
+</ul>
+
+<script>
+  $(document).ready(function () {
+    $(".navbar-menu-items").click(() => {
+      $(".navbar-small-screen").toggle(
+        ".navbar-menu-items .navbar-small-screen"
+      );
+    });
+
+    $(".navbar-small-screen").click(() => {
+      $(".navbar-small-screen").toggle(
+        ".navbar-small-screen  .navbar-menu-items "
+      );
+    });
+
+    $('.ac-repairs').click( ()=>{
+      $('.leftcolumn').load('./templates/ac-repairs.html');
+    })
+
+    $('.ac-maintenance').click( ()=>{
+      $('.leftcolumn').load('./templates/ac-maintenance.html');
+    })
+
+    $('.ac-installation').click( ()=>{
+      $('.leftcolumn').load('./templates/ac-installation.html');
+    })
+
+    $('.ac-replacement').click( ()=>{
+      $('.leftcolumn').load('./templates/ac-replacement.html');
+    })
+
+    $('.h-repairs').click( ()=>{
+      $('.leftcolumn').load('./templates/h-repairs.html');
+    })
+
+    $('.h-maintenance').click( ()=>{
+      $('.leftcolumn').load('./templates/h-maintenance.html');
+    })
+
+    $('.h-installation').click( ()=>{
+      $('.leftcolumn').load('./templates/h-installation.html');
+    })
+
+    $('.h-pumps').click( ()=>{
+      $('.leftcolumn').load('./templates/h-pumps.html');
+    })
+
+    $('.h-furnace').click( ()=>{
+      $('.leftcolumn').load('./templates/h-furnace.html');
+    })
+
+
+
+  });
+</script>
